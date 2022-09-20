@@ -1,0 +1,116 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.container_flex{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: row;
+}
+
+.item_flex{
+    width: 100px;
+    height: 50px;
+    border: 2px solid yellow;
+    background-color: aqua;
+}
+section {
+    display: flex;
+    padding: 10px;
+}
+
+section div h2 {
+    color: white;
+}
+
+section div p {
+    color: white;
+}
+main section div a {
+    text-decoration: none;
+    color: black;
+}
+
+section img{
+    width: 25%;
+    height: 25%;
+}
+
+.boton {
+    width: 50px;
+    height: 50px;
+    border: black 2px solid;
+    border-radius: 20%;
+    background-color: whitesmoke;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+/*estilos para las section*/
+main section:first-child {
+    background: #2C3E50;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #4CA1AF, #2C3E50);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #4CA1AF, #2C3E50); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */   
+}
+main section:nth-child(2) {
+    background: #b92b27;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #1565C0, #b92b27);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #1565C0, #b92b27); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+}
+main section:last-child {
+    background: #009FFF;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #ec2F4B, #009FFF);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #ec2F4B, #009FFF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */    
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.menu {
+    background-color: antiquewhite;
+    display: flex;
+    padding: 10px;
+    justify-content: space-between;
+    position: sticky;
+    top: 0%;
+}
+
+body header img {
+    display: inline-block;
+    justify-content: center;
+}
+
+.menu ul li {
+    display: inline-block;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+.menu a:hover {
+    font-size: 1.2em;
+    color: crimson;
+    text-decoration: underline;
+}
+
+footer {
+background-color: antiquewhite;
+}
+
+@media screen and (max-width: 1000px) {
+    .container_flex {
+        flex-direction: column;
+    }
+    .menu img {
+        width: 20%;
+        height: 20%;
+    }
+    .menu p {
+        text-align: center;
+    }
+}
